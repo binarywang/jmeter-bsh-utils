@@ -53,7 +53,6 @@ public class BshUtilsTest extends BaseTestCase {
     public void testCheckState()
             throws UnsupportedEncodingException, InterruptedException {
         BshUtils.checkState(this.log, this.vars,
-            "http://10.255.33.103/v1/flow/getstate", "UU_W_SPEED_000003285",
-            "UU_SPEED_WECHAT", "1995", 5);
+            "http://10.255.33.103/v1/flow/getstate", "1995", 5);
     }
 }
