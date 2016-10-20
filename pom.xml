@@ -32,5 +32,16 @@
 			<version>1.10.19</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.jodd</groupId>
+			<artifactId>jodd-http</artifactId>
+			<version>3.7.1</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.jodd</groupId>
+					<artifactId>jodd-upload</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
   </dependencies>
 </project>
