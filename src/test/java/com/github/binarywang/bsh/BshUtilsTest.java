@@ -7,9 +7,9 @@ import java.io.UnsupportedEncodingException;
 import org.apache.jmeter.threads.JMeterVariables;
 import org.apache.log.Hierarchy;
 import org.apache.log.Logger;
-import org.junit.Before;
-import org.junit.Test;
 import org.mockito.Mock;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import com.github.binarywang.BaseTestCase;
 import com.google.common.collect.ImmutableMap;
@@ -24,7 +24,7 @@ public class BshUtilsTest extends BaseTestCase {
     @Mock
     private JMeterVariables vars;
 
-    @Before
+    @BeforeMethod
     public void setUp() {
         this.log = Hierarchy.getDefaultHierarchy().getLoggerFor("BshUtilsTest");
         when(this.vars.getIterator())
